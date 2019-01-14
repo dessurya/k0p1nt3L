@@ -1,0 +1,98 @@
+/* newsevent */
+	#newsevent{
+		padding: 40px 0;
+	}
+	#newsevent h1{
+		margin-bottom: 30px; 
+	}
+	#newsevent #list-item{
+		position: relative;
+	}
+	#newsevent #list-item .list{
+		position: relative;
+		margin: 25px auto;
+	    display: inline-grid;
+	    width: 24%;
+	}
+	#newsevent #list-item .list a{
+		text-decoration: unset;
+		color: unset;
+	}
+	#newsevent #list-item .list #wrapper{
+		width: 85%;
+		margin: 0 auto;
+		position: relative;
+		background-color: rgb(243, 243, 243);
+		box-shadow: -5px 5px 5px rgb(183, 183, 183);
+	}
+	#newsevent #list-item .list #img{
+		width: 100%;
+		height: 200px;
+
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	#newsevent #list-item .list #desc{
+		padding: 20px 15px;
+	}
+	#newsevent #list-item .list h3{
+		margin: 0;
+		color: rgb(175, 2, 3);
+	}
+	#newsevent .wrapper #link{
+		margin-top: 35px;
+	}
+/* newsevent */
+
+#newsevent.view img{
+	float: left;
+	width: 45%;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+#newsevent.view .read{
+	text-align: justify;
+	text-indent: 2em;
+}
+
+#response-call{
+	display: none;
+	width: 65%;
+	padding: 5px 0;
+	margin: 10px auto;
+	color: rgb(175, 2, 3);
+	border: solid 1.5px rgb(175, 2, 3);
+}
+
+@media (max-width: 812px) { /* Mobile landscape and potrait */
+	/* newsevent */
+		#newsevent{
+			padding: 20px 0;
+		}
+		#newsevent #list-item .list{
+			margin: 0 .auto;
+		    display: block;
+		    width: 100%;
+		}
+		#newsevent #list-item .list #img{
+			height: 180px;
+		}
+		#newsevent #list-item .list #desc{
+			padding: 20px 10px;
+		}
+		#newsevent.view img{
+			float: unset;
+			width: 100%;
+			margin: unset;
+			margin-bottom: 20px;
+		}
+		#newsevent.view .read{
+			text-indent: unset;
+		}
+		#newsevent.view .read p{
+			text-indent: 1.2em;
+		}
+	/* newsevent */
+}

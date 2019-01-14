@@ -1,0 +1,156 @@
+/* portofolio */
+	#portofolio{
+		padding: 40px 0 40px;
+	}
+	#portofolio h1{
+		margin: 0;
+		margin-bottom: 30px;
+	}
+	#portofolio #list-item{
+		position: relative;
+		padding-top: 15px;
+	}
+	#portofolio #list-item .list{
+		position: relative;
+		width: 100%;
+		background-color: rgb(243, 243, 243);
+		margin: 30px 0;
+		height: 420px;
+	}
+	#portofolio #list-item .list:last-child{
+		margin-bottom: 0;
+	}
+	#portofolio #list-item .list .bubble{
+		position: absolute;
+		bottom: 0;
+		width: 50%;
+	}
+	#portofolio #list-item .list .bubble.left{
+		left: 0;
+	}
+	#portofolio #list-item .list .bubble.right{
+		right: 0;
+	}
+	#portofolio #list-item .list:nth-child(odd) .bubble.right{
+		width: 0;
+	}
+	#portofolio #list-item .list:nth-child(even) .bubble.left{
+		width: 0;
+	}
+	#portofolio #list-item .list .float{
+		position: relative;
+		z-index: 1;
+	}
+	#portofolio #list-item .list:nth-child(odd) .float:nth-child(1){
+		text-align: left;
+		float: left;
+	}
+	#portofolio #list-item .list:nth-child(odd) .float:nth-child(2){
+		text-align: right;
+		float: right;
+	}
+	#portofolio #list-item .list:nth-child(even) .float:nth-child(1){
+		text-align: right;
+		float: right;
+	}
+	#portofolio #list-item .list:nth-child(even) .float:nth-child(2){
+		text-align: left;
+		float: left;
+	}
+	#portofolio #list-item .list:nth-child(odd) .float:nth-child(1) h2,
+	#portofolio #list-item .list:nth-child(odd) .float:nth-child(1) p{
+	}
+	#portofolio #list-item .list:nth-child(even) .float:nth-child(1) h2,
+	#portofolio #list-item .list:nth-child(even) .float:nth-child(1) p{
+	}
+
+	#portofolio #list-item .list .float:nth-child(1){
+		width: 60%;
+	}
+	#portofolio #list-item .list .float:nth-child(2){
+		width: 40%;
+	}
+
+	#portofolio #list-item .list .float .tab{
+		width: 80%;
+		margin: 0 auto;
+	}
+	#portofolio #list-item .list .float .tab .row .col{
+		vertical-align: middle;
+		height: 420px;
+		overflow-x: hidden;
+	}
+	#portofolio #list-item .list:nth-child(odd) .float .tab .row .col .pad{
+		padding-right: 12%;
+		padding-left: 10%;
+	}
+	#portofolio #list-item .list:nth-child(even) .float .tab .row .col .pad{
+		padding-right: 10%;
+		padding-left: 12%;
+	}
+	#portofolio #list-item .list .float .tab .row .col img{
+		height: 400px;
+	}
+	#portofolio #list-item .list .float .tab .row .col h2{
+		font-size: 42pt;
+		color: rgb(175, 2, 3);
+		margin: 0;
+		margin-bottom: 10px;
+	}
+	#portofolio #list-item .list .float .tab .row .col p{
+		font-size: 11pt;
+	}
+	#portofolio #list-item .list .float .tab .row .col .link{
+		margin-top: 30px;
+	}
+/* portofolio */
+
+@media (max-width: 812px) { /* Mobile landscape and potrait */
+	/* portofolio */
+		#portofolio{
+			padding: 20px 0;
+		}
+		#portofolio #list-item{
+			padding-top: unset;
+		}
+		#portofolio #list-item .list{
+			height: auto;
+		}
+		#portofolio #list-item .list:nth-child(odd) .float .tab .row .col .pad,
+		#portofolio #list-item .list:nth-child(even) .float .tab .row .col .pad{
+			text-align: center;
+			padding: unset;
+		}
+		#portofolio #list-item .list:nth-child(odd) .float:nth-child(1),
+		#portofolio #list-item .list:nth-child(odd) .float:nth-child(2){
+			float: unset;
+		}
+		#portofolio #list-item .list .float:nth-child(1),
+		#portofolio #list-item .list .float:nth-child(2){
+			width: 100%;
+		}
+
+		#portofolio #list-item .list .float .tab,
+		#portofolio #list-item .list .float .tab .row,
+		#portofolio #list-item .list .float .tab .row .col{
+			display: block;
+			vertical-align: unset;
+			height: auto;
+			overflow-x: unset;
+		}
+		#portofolio #list-item .list .float .tab .row .col h2{
+			padding: 20px 0 10px;
+			font-size: 20pt;
+		}
+		#portofolio #list-item .list .float .tab .row .col .link{
+			margin: 15px 0;
+		}
+		#portofolio #list-item .list .float .tab .row .col img{
+			height: auto;
+			width: 100%;
+		}
+		#portofolio #list-item .list .bubble{
+			width: 50% !important;
+		}
+	/* portofolio */
+}

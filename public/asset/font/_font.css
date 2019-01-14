@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'Kanit-Regular';
+    src: url('../font/Kanit/Kanit-Regular.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url('../font/Open_Sans/OpenSans-Light.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url('../font/Open_Sans/OpenSans-Bold.ttf');
+}
+@font-face {
+    font-family: 'OpenSans-ExtraBold';
+    src: url('../font/Open_Sans/OpenSans-ExtraBold.ttf');
+}

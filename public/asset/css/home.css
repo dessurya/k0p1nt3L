@@ -1,0 +1,254 @@
+body{
+	background-color: rgb(243, 243, 243);
+}
+
+/* kopin_banner */
+	#kopin_banner{
+		position: absolute;
+		width: 100%;
+		z-index: 100;
+		background-color: unset;
+	}
+/* kopin_banner */
+
+/* banner */
+	#banner{
+		position: relative;
+		width: 100%;
+		height: 680px;
+		z-index: 20;
+	}
+	#banner #img{
+		position: relative;
+		width: 100%;
+		height: 800px;
+
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	#banner #img #wrapper{
+		position: absolute;
+		width: 35%;
+		top: 260px;
+		left: 140px;
+		color: rgb(1,1,1);
+	}
+	#banner #img #wrapper h1{
+		font-family: 'OpenSans-ExtraBold';
+		font-size: 38pt;
+		margin: 0;
+		margin-bottom: 20px;
+		color: rgb(175, 2, 3);
+	}
+
+	#banner #img #wrapper #link{
+		margin-top: 40px;
+	}
+
+	#banner .owl-controls{
+		position: relative;
+		bottom: 60px;
+	}
+	#banner .owl-controls .owl-page.active span{
+		background: rgb(175, 2, 3);
+	}
+	#banner .owl-controls .owl-page span{
+		margin: 5px;
+		background: rgb(2, 2, 2);
+	}
+/* banner */
+
+/* about */
+	#about{
+		position: relative;
+		padding: 180px 0;
+
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	#about h1{
+		padding-bottom: 60px; 
+	}
+	#about p{
+		width: 90%;
+		margin: 0 auto;
+		margin-bottom: 80px;
+	}
+	#about img{
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+	}
+/* about */
+
+/* newsevent */
+	#newsevent{
+		position: relative;
+		background-color: white;
+	}
+	#newsevent #list-item{
+		padding: 30px 0 0;
+	}
+	#newsevent #list-item .list{
+		position: relative;
+		margin: 50px .5%;
+	    display: inline-grid;
+	    width: 31%;
+		background-color: rgb(243, 243, 243);
+		z-index: 100;
+	}
+	#newsevent #list-item .list #img{
+		width: 100%;
+		height: 300px;
+
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	#newsevent #list-item .list #desc{
+		padding: 30px 10px 20px;
+	}
+	#newsevent #list-item .list h3{
+		margin: 0;
+		color: rgb(175, 2, 3);
+	}
+	#newsevent #list-item .list p{
+		margin: 0;
+	}
+/* newsevent */
+
+
+/* partners */
+	#partners{
+		position: relative;
+		padding: 220px 0 20px;
+
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+	#partners #newsevent_img{
+		position: absolute;
+		width: 100%;
+		top: -250px;
+	}
+	#partners h1{
+		padding-bottom: 60px;
+	}
+	#partners #list-item{
+		padding-bottom: 60px;
+	}
+	#partners #list-item a{
+		text-decoration: none;
+		color: unset;
+	}
+	#partners #list-item img{
+		height: 170px;
+		width: auto;
+		padding: 5px;
+	}
+/* partners */
+
+/*responsif*/
+	@media screen and (max-width: 1024px) and (min-width: 528px){ /* tab */
+	}
+
+	@media (max-width: 812px) { /* Mobile landscape and potrait */
+		/* banner */
+			#banner{
+				height: 160px;
+			}
+			#banner #img{
+				height: 200px;
+
+				background-position: left;
+				background-size: cover;
+			}
+			#banner #img #wrapper{
+				width: 40%;
+				top: 5px;
+				left: 40px;
+			}
+			#banner #img #wrapper h1{
+				margin-bottom: 5px;
+				font-size: 12pt;
+			}
+			#banner #img #wrapper p{
+				font-size: 6pt;
+			}
+			#banner #img #wrapper #link{
+				margin-top: 5px;
+				transform: scale(.6);
+			}
+			#banner .owl-controls .owl-page span{
+				transform: scale(.8);
+				margin: 3px;
+			}
+		/* banner */
+
+		/* about */
+			#about{
+				padding: 80px 0;
+			}
+			#about h1{
+				padding-bottom: 30px; 
+			}
+			#about p{
+				margin-bottom: 45px;
+			}
+		/* about */
+
+		/* newsevent */
+			#newsevent{
+				padding: 40px 0 0;
+			}
+			#newsevent #list-item .list{
+				width: 90%;
+				display: block;
+				margin: 0 auto;
+				margin-bottom: 20px;
+			}
+			#newsevent #list-item .list:last-child{
+				margin-bottom: 0px;
+			}
+			#newsevent #list-item .list #img{
+				height: 160px;
+			}
+			#newsevent #list-item .list #desc{
+				padding: 15px 10px;
+			}
+		/* newsevent */
+
+		/* partners */
+			#partners{
+				padding: 90px 0 0;
+			}
+			#partners h1{
+				padding-bottom: 40px;
+			}
+			#partners #list-item{
+				padding-bottom: 50px;
+			}
+			#partners #newsevent_img{
+				top: -50px;
+			}
+			#partners #list-item img{
+				height: 105px;
+			}
+		/* partners */
+	}
+
+	@media screen and (max-width: 812px) and (min-width: 528px) { /* Mobile landscape */
+	}
+
+	@media (max-width: 528px) { /* Mobile potrait */
+		#banner .owl-controls .owl-page span{
+			display: none;
+		}
+	}
+/*responsif

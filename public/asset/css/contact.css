@@ -1,0 +1,65 @@
+	#location h1,
+	#contact h1{
+		position: relative;
+		margin-bottom: 30px;
+	}
+
+	#response-send{
+		display: none;
+		width: 65%;
+		padding: 5px 0;
+		margin: 10px auto;
+		color: rgb(175, 2, 3);
+		border: solid 1.5px rgb(175, 2, 3);
+	}
+/* location */
+	#location{
+		padding: 40px 0;
+		background-color: rgb(243, 243, 243);
+	}
+	#location iframe{
+		height: 450px;
+		margin: 40px 0;
+	}
+/* location */
+
+/* contact */
+	#contact{
+		padding: 60px 0;
+
+		background-attachment: fixed;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	#contact form div{
+		position: relative;
+	}
+	#contact form div label{
+		display: none;
+		position: absolute;
+		right: 0;
+		color: rgb(175, 2, 3);
+	}
+	#contact form input,
+	#contact form textarea{
+		display: block;
+		width: 100%;
+		margin: 10px 0;
+		padding: 5px 7px;
+		background-color: rgba(0,0,0,0);
+		border: none; 
+		border-bottom: 1px solid rgb(172, 172, 172);
+		outline: none;
+	}
+	#contact form textarea{
+		margin-bottom: 40px;
+	}
+/* contact */
+
+@media (max-width: 812px) { /* Mobile landscape and potrait */
+	#location iframe{
+		height: 350px;
+		margin: 15px 0;
+	}
+}
